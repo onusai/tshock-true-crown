@@ -30,6 +30,10 @@ namespace TrueCrown
             public bool Enabled { get; set; } = true;
             public int Interval { get; set; } = 60;
             public bool WarnPlayersBeforeTeleport { get; set; } = true;
+            public Dictionary<int, int> GiveItems { get; set; } = new Dictionary<int, int>()
+            {
+                {4423, 10}
+            };
         }
 
         ConfigData config;
@@ -87,8 +91,13 @@ namespace TrueCrown
 
             foreach (TSPlayer player in TShock.Players)
             {
-                if (player == null) continue;
+                if (player == null || player.Dead) continue;
                 player.TPlayer.TeleportationPotion();
+
+                foreach (var entry in config.GiveItems)
+                {
+                    player.GiveItem(entry.Key, entry.Value);
+                }
             }
         }
 
