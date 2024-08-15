@@ -28,11 +28,11 @@ namespace TrueCrown
         public class ConfigData
         {
             public bool Enabled { get; set; } = true;
-            public int Interval { get; set; } = 60;
+            public int Interval { get; set; } = 120;
             public bool WarnPlayersBeforeTeleport { get; set; } = true;
             public Dictionary<int, int> GiveItems { get; set; } = new Dictionary<int, int>()
             {
-                {4423, 10}
+                {4423, 8}
             };
         }
 

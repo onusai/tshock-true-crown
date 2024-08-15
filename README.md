@@ -7,11 +7,11 @@
 * Install the plugin and start tshock, this will generate the config file in `tshock/TrueCrown.json`
 * Close tshock, and edit the config file
 * The `Interval` property allows you to define the frequency (in seconds) at which players will be teleported
-    - By default it is set to 60 seconds
+    - By default it is set to 120 seconds
 * The `GiveItems` propety is a list of items that will be given to players on each teleport
-    - By default, this list contains 10 Scarab Bombs
+    - By default, this list contains 8 Scarab Bombs
     - To add your own items, follow this format `"item id": amount`
-        - For example `"4423": 10` gives 10 scarab bombs
+        - For example `"4423": 8` gives 8 scarab bombs
         - If the list has more than one entry, you will need to add a comma at the end of each entry (except the last one) to seperate them
 * Save the config file. Note that you will always need to restart tshock after editing config file
 
