@@ -8,6 +8,7 @@
 * Close tshock, and edit the config file
 * The `Interval` property allows you to define the frequency (in seconds) at which players will be teleported
     - By default it is set to 60 seconds
+* Save the config file. Note that you will always need to restart tshock after editing config file
 
 ### Commands
 `/ttc`
