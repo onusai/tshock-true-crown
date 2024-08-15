@@ -55,7 +55,7 @@ namespace TrueCrown
             if (!config.Enabled) return;
             ServerApi.Hooks.GameUpdate.Register(this, OnGameUpdate);
 
-            RegisterCommand("ttc", "tshock.admin", OnTTC, "Toggle True Crown: pause/resume random teleportation");
+            RegisterCommand("ttc", "tshock.admin", OnTTC, "Toggle True Crown (pause/resume random teleportation)");
         }
 
         protected override void Dispose(bool disposing)
