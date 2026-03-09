@@ -22,4 +22,4 @@
 
 ***
 
-[Download TrueCrown.dll](https://github.com/onusai/tshock-true-crown/raw/main/bin/Debug/net6.0/TrueCrown.dll)
+[Download TrueCrown.dll](https://github.com/onusai/tshock-true-crown/raw/main/bin/Debug/net9.0/TrueCrown.dll)
